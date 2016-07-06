@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NWE Guides</title>
+    <link rel="icon" href="common/art/nwe_logo_icon.png">
+
+    <link rel='stylesheet' href='http://www.w3schools.com/lib/w3.css' />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link href="common/css/default.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <script src="common/js/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <script src="common/js/lib.js" type="text/javascript"></script>
+    <script src="common/js/main.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+    <script>
+        // Load jQuery and other Javascript after page is done loading	
+        $(document.body).ready(function () {
+            $('.accordion_btn').on('click', accordionToggle);
+            displayResizer();
+            $(window).resize(displayResizer);
+
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="wrapper w3-center">
+        <div class="w3-row">
+            <div class="w3-col s12">
+                <header class="w3-row container">
+                    <div class="w3-col s12">
+                        <section class="w3-row">
+                            <div class="w3-col s12">
+                                <h1>
+                                    <span>N</span>orth<span>W</span>est <span>E</span>xpeditions
+                                    </h1>
+                            </div>
+                        </section>
+                        <section class="w3-row">
+                            <nav class="w3-col s12 primary_nav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="expeditions.html" class="dropdown_link">Expeditions</a>
+                                        <div class="dropdown_content">
+                                            <a href="river_rafting.html">River Rafting</a>
+                                            <a href="wilderness_backpacking.html">Backpacking</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="media.html">Media</a></li>
+                                    <li><a href="guides.html" class="active_page">Guides</a></li>
+                                    <li><a href="resources.html">Resources</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </header>
+                <main class="w3-row container" id="guides">
+                    <h2 id="page_identification">Guides</h2>
+                    <p>Follow us and you shall explore&#33;</p>
+                    <div class="w3-row">
+                        <section class="w3-col s12">
+                            <article class="w3-accordion">
+                                <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-minus ui-btn-icon-right">Bret Malley - <em>Nickname: AdventureMan</em></button>
+                                <div class="w3-accordion-content w3-container w3-show" id="bret_malley" name="bret_malley">
+                                    <div class="w3-col s2">
+                                        <img src="common/art/guides/bret.jpg">
+                                    </div>
+                                    <div class="w3-col s10">
+                                        <p>
+                                            Bret graduated from Northrop University with a degree in Aeronautical and Astronautical Engineering, and worked in the aerospace industry as a specialist in computer-simulated space-flight mechanics. He retired at an early age to pursue his outdoor interests.
+                                        </p>
+                                        <p>
+                                            A mountaineer, he climbed most of Colorado’s fourteeners, many in winter; and he climbed extensively across western North America. His highest peak was Peru's Huascarán, at 22,205 feet. Julian worked as winter mountaineering instructor for two seasons, and as wilderness instructor for seven. In the process he backpacked several thousand miles.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="w3-col s12">
+                            <article class="w3-accordion">
+                                <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-minus ui-btn-icon-right">Peter Hoelter - <em>Nickname: Scuba Pete</em></button>
+                                <div class="w3-accordion-content w3-container w3-show" id="peter_hoelter" name="peter_hoelter">
+                                    <div class="w3-col s10">
+                                        <p>
+                                            Peter is an American explorer, soldier, and territorial governor. A native of Virginia, he grew up in pre-statehood Kentucky before later settling in what later became the state of Missouri. Along with Meriwether Lewis, Hoelter led the Lewis and Hoelter Expedition of 1803 to 1805 across the Louisiana Purchase to the Pacific Ocean. Before the expedition he served in a militia and the United States Army, while afterwards he served in a militia and as governor of the Missouri Territory.
+                                        </p>
+                                    </div>
+                                    <div class="w3-col s2">
+                                        <img src="common/art/guides/peter.jpg">
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="w3-col s12">
+                            <article class="w3-accordion">
+                                <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-minus ui-btn-icon-right">Christine Linder - <em>Nickname: The Hilltop Hiker</em></button>
+                                <div class="w3-accordion-content w3-container w3-show" id="christine_linder" name="christine_linder">
+                                    <div class="w3-col s2">
+                                        <img src="common/art/guides/christine.jpg">
+                                    </div>
+                                    <div class="w3-col s10 left_col">
+                                        <p>
+                                            Christine is a American mountain-climber, who became the first woman to reach the summit of Mount Everest on May 16, 1975. Christine has a goal to climb the highest peak in every country in the world. Today she has slowed down her climbing, but continues to work on ecological concerns. Christine is currently the director of Himalayan Adventure Trust of Japan, an organization working on a global level to preserve mountain environments.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </main>
+                <footer class="w3-row container">
+                    <nav class="w3-col s12 primary_nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="expeditions.html" class="dropdown_link">Expeditions</a>
+                                <div class="dropdown_content">
+                                    <a href="river_rafting.html">River Rafting</a>
+                                    <a href="wilderness_backpacking.html">Backpacking</a>
+                                </div>
+                            </li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="guides.html" class="active_page">Guides</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <section class="w3-row">
+                        <div class="w3-col s2">
+                            <h2>Our Mission:</h2>
+                        </div>
+                        <div class="w3-col s10">
+                            <p>
+                                Northwest Expeditions strives to provide fun, safe, environmentally-conscious and adventurous outdoor activities for individuals. Our goal is to help individuals experience the great outdoors in a group setting with a skilled leader.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="company_info" class="w3-row">
+                        <div class="w3-col s4">
+                            Northwest Expeditions
+                        </div>
+                        <address class="w3-col s4">
+                            550 Court St. NE, Salem, Oregon
+                        </address>
+                        <tel class="w3-col s4">
+                            503.555.8775
+                        </tel>
+                    </section>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

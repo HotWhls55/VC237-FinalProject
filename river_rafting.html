@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NWE River Rafting</title>
+    <link rel="icon" href="common/art/nwe_logo_icon.png">
+
+    <link rel='stylesheet' href='http://www.w3schools.com/lib/w3.css' />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link href="common/css/default.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <script src="common/js/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <script src="common/js/lib.js" type="text/javascript"></script>
+    <script src="common/js/main.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+    <script>
+        // Load jQuery and other Javascript after page is done loading	
+        $(document.body).ready(function () {
+            $('.accordion_btn').on('click', accordionToggle);
+            displayResizer();
+            $(window).resize(displayResizer);
+            $('img.enlarge').on('click', imageModal);
+            $('#img_modal').on('click', modalClose);
+
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="wrapper w3-center">
+        <div class="w3-row">
+            <div class="w3-col s12">
+                <header class="w3-row container">
+                    <div class="w3-col s12">
+                        <section class="w3-row">
+                            <div class="w3-col s12">
+                                <h1>
+                                    <span>N</span>orth<span>W</span>est <span>E</span>xpeditions
+                                    </h1>
+                            </div>
+                        </section>
+                        <section class="w3-row">
+                            <nav class="w3-col s12 primary_nav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="expeditions.html" class="dropdown_link">Expeditions</a>
+                                        <div class="dropdown_content">
+                                            <a href="river_rafting.html">River Rafting</a>
+                                            <a href="wilderness_backpacking.html">Backpacking</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="media.html">Media</a></li>
+                                    <li><a href="guides.html">Guides</a></li>
+                                    <li><a href="resources.html">Resources</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </header>
+                <main class="w3-row container" id="rafting">
+                    <h2 id="page_identification">River Rafting</h2>
+                    <section class="w3-col s6 left_col">
+                        <img src="common/art/nwe_logo_transparent.png" class="hero_img">
+                    </section>
+                    <section class="w3-col s6 right_col">
+
+                        <article class="w3-accordion">
+                            <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-plus ui-btn-icon-right">Description</button>
+                            <div class="w3-accordion-content w3-container" id="description">
+                                <p>
+                                    <strong>
+                                        Come experience the white water rapids of the Deschutes River in North-central Oregon. Navigate Boxcar Falls, soak up the sun and get your feet wet.
+                                    </strong>
+                                </p>
+                                <p>
+                                    The Deschutes River originates high in the Cascade mountains from Little Lava Lake. The river carves its path through 250 miles of eastern Oregon before flowing into the Columbia. The 'Lower Deschutes' refers to the hundred mile section from the mouth of the Deschutes to Pelton Dam (near Lake Billy Chinook). The lower river offers a beautiful desert canyon filled with sage brush, osprey, incredible basalt rock formations and plenty of exciting rapids.
+                                </p>
+                                <p>
+                                    The Deschutes River is one of the most popular rivers in Oregon. There are many attractive features to this section of the river that has made it become so popular. From the warm sunshine, reliable summer water flows, easy access to the numerous fun and exciting rapids that it has to offer, its no wonder that many people travel to this destination.
+                                </p>
+                                <p>
+                                    River Drifters offers a number of trips on the Lower Deschutes, from 1/2-day to a five-day vacation, there is a trip for you! One of the more popular trips on the Deschutes is the full-day trip. This trip covers over fourteen river miles and takes between five to six hours to complete. There are numerous class III+ rapids on this section of river. Some of the exciting rapids that we will run are Wapinita, Boxcar, Surf City, Oak Springs, White River and elevator rapids. River Drifters also offers a half-day trip for those who can only set aside a few hours. The Deschutes River is perfect for families and first-timers and even those who have been rafting several times. Whether you are six or sixty-five, the Deschutes River is perfect for you!
+                                </p>
+                                <p>
+                                    One drawback to the Deschutes River being so popular is that there is a limited number of spaces that we can fill on weekends from June through August. So if you are thinking about going rafting this summer its time to start planning ahead to reserve those seats!
+                                </p>
+                                <p>
+                                    <strong>Cost: </strong>&#36;150.00 per person
+                                    <br />
+                                    <strong>Meals: </strong>Lunch included!
+                                </p>
+                            </div>
+                        </article>
+                        <article class="w3-accordion">
+                            <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-plus ui-btn-icon-right">What to Bring</button>
+                            <div class="w3-accordion-content w3-container" id="what_to_bring">
+                                <ul>
+                                    <li>Swimsuit</li>
+                                    <li>Water sandals</li>
+                                    <li>Sun hat with brim</li>
+                                    <li>T-shirts</li>
+                                    <li>Extra underwear</li>
+                                    <li>Super soaker water gun</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="w3-accordion">
+                            <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-plus ui-btn-icon-right">Date &amp; Time</button>
+                            <div class="w3-accordion-content w3-container" id="date_time">
+                                <div class="w3-row">
+                                    <em class="w3-col s5">When:</em>
+                                    <p class="w3-col s7">July 17th, 8:00 AM - 6:00 PM, 2016</p>
+                                </div>
+                                <div class="w3-row">
+                                    <em class="w3-col s5">Where:</em>
+                                    <p class="w3-col s7"><a href="https://en.wikipedia.org/wiki/Deschutes_River_(Oregon)">Deschutes River</a></p>
+                                </div>
+                                <div class="w3-row">
+                                    <em class="w3-col s5">Meet at:</em>
+                                    <p class="w3-col s7">Maupin, Oregon</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="w3-accordion">
+                            <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-plus ui-btn-icon-right">Leader Information</button>
+                            <div class="w3-accordion-content w3-container" id="leader_info">
+                                <p>This trip will be lead by the one and only <a href="guides.html#christine_linder">Christine Linder</a></p>
+                            </div>
+                        </article>
+                        <article class="w3-accordion">
+                            <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-plus ui-btn-icon-right">Map</button>
+                            <div class="w3-accordion-content w3-container" id="map">
+                                <p><img src="common/art/expeditions/rafting/whitewater_map.jpg" width="100" class="w3-hover-opacity enlarge narrow_img"></p>
+                            </div>
+                        </article>
+                        <article class="w3-accordion">
+                            <button class="w3-btn-block w3-center-align accordion_btn ui-btn ui-icon-minus ui-btn-icon-right">Past Photos</button>
+                            <div class="w3-accordion-content w3-container  w3-show" id="past_photos">
+                                <section class="w3-row-padding ">
+                                    <div class="w3-third">
+                                        <img src="common/art/expeditions/rafting/whitewater_rafting_01.jpg" class="w3-hover-opacity enlarge" alt="river rafting image raft of adults and children in white water">
+                                    </div>
+                                    <div class="w3-third">
+                                        <img src="common/art/expeditions/rafting/whitewater_rafting_02.jpg" class="w3-hover-opacity enlarge" alt="river rafting image raft of adults in white water">
+                                    </div>
+                                    <div class="w3-third">
+                                        <img src="common/art/expeditions/rafting/whitewater_rafting_03.jpg" class="w3-hover-opacity enlarge" alt="river rafting image raft in mild white water">
+                                    </div>
+                                </section>
+                                <section class="w3-row-padding">
+                                    <div class="w3-third">
+                                        <img src="common/art/expeditions/rafting/whitewater_rafting_04.jpg" class="w3-hover-opacity enlarge" alt="river rafting image raft dropping into white water">
+                                    </div>
+                                    <div class="w3-third">
+                                        <img src="common/art/expeditions/rafting/whitewater_rafting_05.jpg" class="w3-hover-opacity enlarge" alt="river rafting image raft covered in water">
+                                    </div>
+                                    <div class="w3-third">
+                                        <img src="common/art/expeditions/rafting/whitewater_rafting_06.jpg" class="w3-hover-opacity enlarge" alt="river rafting image large calm river">
+                                    </div>
+                                </section>
+                            </div>
+                        </article>
+                        <a href="register.html">
+                            <button id="book_now_btn" class="w3-btn-block">Register Now >></button>
+                        </a>
+                    </section>
+                </main>
+                <footer class="w3-row container">
+                    <nav class="w3-col s12 primary_nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="expeditions.html" class="dropdown_link">Expeditions</a>
+                                <div class="dropdown_content">
+                                    <a href="river_rafting.html" River Rafting</a>
+                                        <a href="wilderness_backpacking.html">Backpacking</a>
+                                </div>
+                            </li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="guides.html">Guides</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <section class="w3-row">
+                        <div class="w3-col s2">
+                            <h2>Our Mission:</h2>
+                        </div>
+                        <div class="w3-col s10">
+                            <p>
+                                Northwest Expeditions strives to provide fun, safe, environmentally-conscious and adventurous outdoor activities for individuals. Our goal is to help individuals experience the great outdoors in a group setting with a skilled leader.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="company_info" class="w3-row">
+                        <div class="w3-col s4">
+                            Northwest Expeditions
+                        </div>
+                        <address class="w3-col s4">
+                            550 Court St. NE, Salem, Oregon
+                        </address>
+                        <tel class="w3-col s4">
+                            503.555.8775
+                        </tel>
+                    </section>
+                </footer>
+                <div id="img_modal" class="w3-modal">
+                    <span class="w3-closebtn w3-hover-red w3-text-white w3-container w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img id="modal_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

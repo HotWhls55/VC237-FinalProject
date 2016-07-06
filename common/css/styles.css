@@ -1,0 +1,761 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #6cac6c;
+    color: #2a2a2a;
+}
+
+.wrapper {
+    background-color: #b6d6b6;
+    padding: 0 1% 1% 1%;
+}
+
+.active_page {
+    background-color: #b6d6b6;
+}
+
+
+/*
+*
+* *
+* * * Site Page Header
+* *
+*
+*/
+
+header {
+    padding-top: 2%;
+    background-image: url(../art/nwe_logo_styled.png), linear-gradient(#6695ef, #fff);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+h1 {
+    font-size: 3.0em;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+h1 span {
+    font-size: 1.25em;
+    color: #6cac6c;
+}
+
+nav.primary_nav {
+    margin: .125% 0 .125% 0;
+}
+
+nav.primary_nav ul li {
+    display: inline-block;
+    font-size: 1.15em;
+}
+
+nav.primary_nav ul li a {
+    padding: 7.5px 7.5px 7.5px 7.5px;
+    border-radius: 10px;
+    display: block;
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav.primary_nav ul li a:hover {
+    color: #fff;
+    background-color: #6cac6c;
+}
+
+header section nav li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header section nav div.dropdown_content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(#fff, #ac926e);
+    min-width: 10em;
+    border-radius: 10px;
+}
+
+header section nav div.dropdown_content a:hover {
+    background-color: #6cac6c;
+}
+
+header section nav li.dropdown:hover div.dropdown_content {
+    display: block;
+    z-index: 100;
+}
+
+
+/*
+*
+* *
+* * * Site Accordion Styling
+* *
+*
+*/
+
+article.w3-accordion {
+    background-color: rgba(255, 255, 255, .40);
+    border-radius: 10px;
+}
+
+
+/*
+*
+* *
+* * * Home Page Styling
+* *
+*
+*/
+
+main#home div#main_container {
+    background-image: url(../art/home_page/backpacking_09.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*    height: 480px;*/
+    border-radius: 10px;
+}
+
+main#home img.banner_img {
+    width: 3%;
+    box-shadow: none;
+}
+
+main#home section.scroll_text {
+    font-size: 1.75em;
+    background-color: #6695ef;
+    color: #ac926e;
+    text-shadow: 1px 1px #fff;
+    animation-name: text_animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes text_animate {
+    from {
+        background-color: #6695ef;
+    }
+    to {
+        background-color: #ac926e;
+    }
+    from {
+        color: #ac926e;
+    }
+    to {
+        color: #6695ef;
+    }
+}
+
+main#home section.scroll_text span {
+    background-image: url(../art/nwe_logo_transparent.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+
+main#home a {
+    text-decoration: none;
+}
+
+main#home section section {
+    font-size: 1.25em;
+    margin-top: 2.0%;
+    margin-bottom: 2.0%;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+    padding: .5% 2% 0 2%;
+    text-align: left;
+}
+
+main#home section section:hover {
+    background-color: rgba(108, 172, 108, 0.75);
+}
+
+main#home section.adventures div:first-child,
+main#home section.media div:first-child,
+main#home div#guides_title {
+    font-size: 1.25em;
+    font-weight: 600;
+    padding-bottom: .5%;
+    text-shadow: 1px 2px #d9d9d9;
+}
+
+main#home section section div h2,
+main#home section section div p span {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #d9d9d9;
+    text-shadow: 1px 2px #2a2a2a;
+    letter-spacing: .025em;
+    margin-top: 1%;
+}
+
+main#home section#content span {
+    padding: .5% 1% .5% 1%;
+    background-color: rgba(108, 172, 108, 0.75);
+    border-radius: 7.5px;
+}
+
+main#home section section p {
+    padding: .25% 0% .25% 3.5%;
+    text-align: left;
+}
+
+main#home section.guides div p {
+    font-size: .75em;
+    padding-bottom: 2%;
+}
+
+
+/*
+*
+* *
+* * * Expeditions Page Styling
+* *
+*
+*/
+
+article div.expedition_activity {
+    padding: 0 2.5%;
+    font-size: 0.8725em;
+}
+
+article div.expedition_activity p,
+article div.expedition_activity ul {
+    padding: 0 2.5% 2.5% 2.5%;
+    text-align: left;
+}
+
+article div.expedition_activity p:last-child {
+    text-indent: 0;
+}
+
+article div.expedition_activity p strong {
+    font-weight: bold;
+}
+
+article div.expedition_activity ul {
+    padding-left: 10%;
+}
+
+article div.expedition_activity ul li {
+    list-style-image: url(../art/nwe_logo_icon.png);
+    list-style-position: inherit;
+}
+
+
+/*
+*
+* *
+* * * Main
+* *
+*
+*/
+
+main {
+    padding-top: 2%;
+}
+
+main h2#page_identification {
+    font-size: 3.0em;
+}
+
+main section.left_col img.hero_img {
+    box-shadow: none;
+    cursor: default;
+}
+
+main section.right_col {
+    padding-bottom: 1%;
+}
+
+
+/*
+*
+* *
+* * * Accordion Actions
+* *
+*
+*/
+
+article button {
+    border-radius: 10px;
+    background-color: #6695ef !important;
+    font-family: 'Oxygen', sans-serif !important;
+    font-size: 1.25em !important;
+    letter-spacing: 0.10em;
+    color: #d9d9d9 !important;
+}
+
+article button:hover {
+    background-color: #d9d9d9 !important;
+    font-family: 'Oxygen', sans-serif !important;
+    letter-spacing: 0.10em;
+    color: #6695ef !important;
+}
+
+article button.sub_btn {
+    background-color: #d9d9d9 !important;
+    font-family: 'Oxygen', sans-serif !important;
+    font-size: 1.25em !important;
+    letter-spacing: 0.10em;
+    color: #6695ef !important;
+}
+
+article button.sub_btn:hover {
+    border-radius: 10px;
+    background-color: #6695ef !important;
+    font-family: 'Oxygen', sans-serif !important;
+    font-size: 1.25em !important;
+    letter-spacing: 0.10em;
+    color: #d9d9d9 !important;
+}
+
+article button.sub_btn a:hover {
+    background-color: transparent;
+}
+
+
+/*
+*
+* *
+* * * Description
+* *
+*
+*/
+
+article div#description {
+    padding: 0 2.5%;
+    font-size: 0.8725em;
+}
+
+article div#description p {
+    padding: 0 2.5% 2.5% 2.5%;
+    text-align: left;
+    text-indent: 5%;
+}
+
+article div#description p:last-child {
+    text-indent: 0;
+}
+
+article div#description p strong {
+    font-weight: bold;
+}
+
+
+/*
+*
+* *
+* * * What to Bring
+* *
+*
+*/
+
+article div#what_to_bring ul {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8725em;
+}
+
+article div#what_to_bring ul li {
+    padding-bottom: 1%;
+    list-style-image: url(../art/nwe_logo_icon.png);
+    list-style-position: inherit;
+    text-align: left;
+}
+
+
+/*
+*
+* *
+* * * Date & Time
+* *
+*
+*/
+
+article div#date_time em {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1%;
+    font-size: 0.8725em;
+}
+
+article div#date_time p {
+    text-align: left;
+    font-size: 0.8725em;
+}
+
+main#backpacking section article div p a,
+main#rafting section article div p a {
+    color: #6695ef;
+    font-weight: bold;
+    text-decoration: underline !important;
+    display: inline;
+    padding: 0;
+}
+
+main#backpacking section article div p a:hover,
+main#rafting section article div p a:hover {
+    color: #d9d9d9 !important;
+    background-color: #6695ef !important;
+}
+
+main#backpacking section article div p a:active,
+main#rafting section article div p a:active {
+    background-color: #ac926e !important;
+}
+
+main#backpacking section article div p a:visited,
+main#rafting section article div p a:visited {
+    color: #1244a1 !important;
+}
+
+
+/*
+*
+* *
+* * * Leader Information
+* *
+*
+*/
+
+article div#leader_info {
+    font-size: 0.8725em;
+}
+
+
+/*
+*
+* *
+* * * Map
+* *
+*
+*/
+
+article div#map img {
+    padding: 0% 40% 0% 40%;
+    box-shadow: none;
+}
+
+
+/*
+*
+* *
+* * * Past Photos
+* *
+*
+*/
+
+article div#past_photos {
+    padding: 1% 0;
+}
+
+article div#past_photos section.w3-row-padding {
+    padding-bottom: 1%
+}
+
+
+/*
+*
+* *
+* * * Images / Modal Display
+* *
+*
+*/
+
+img {
+    width: 100%;
+    box-shadow: 0px 0px 2px 2px rgba(172, 146, 110, .75);
+    border-radius: 10px;
+}
+
+img.enlarge {
+    cursor: zoom-in;
+}
+
+div#img_modal div.w3-modal-content {
+    background-color: transparent;
+}
+
+div#modal_img {
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+img#modal_img {
+    cursor: pointer;
+}
+
+.narrow_img_style {
+    max-height: 720px;
+    width: auto;
+}
+
+
+/*
+*
+* *
+* * * Register Now Button
+* *
+*
+*/
+
+main button#book_now_btn {
+    padding: 4% 0 4% 0;
+    background-color: #ac926e;
+    border-radius: 10px;
+    font-family: 'Oxygen', sans-serif !important;
+    font-size: 1.25em !important;
+    color: #d9d9d9 !important;
+}
+
+main button#book_now_btn:hover {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    font-family: 'Oxygen', sans-serif !important;
+    font-size: 1.25em !important;
+    color: #ac926e !important;
+}
+
+
+/*
+*
+* *
+* * * Register Page Styling
+* *
+*
+*/
+
+main#register p {
+    padding: 1.5% 20% 1.5% 20%;
+}
+
+main#register form table {
+    width: auto;
+    margin: 0 auto;
+    font-size: .875em;
+}
+
+main#register form table td {
+    padding: 1% 1% 1% 1%;
+}
+
+main#register form td.right {
+    text-align: left;
+}
+
+
+/*
+*
+* *
+* * * Media Page Styling
+* *
+*
+*/
+
+main#media div section article button {
+    font-size: .875em !important;
+}
+
+main#media div section article button em {
+    font-style: italic;
+    font-size: .875em;
+}
+
+main#media div section article div p {
+    line-height: 1.25em;
+    font-weight: 500;
+    font-size: 1.125em;
+}
+
+main#media div section article div.left_col p {
+    padding-left: 5%;
+    text-align: left;
+}
+
+main#media div section article div.right_col p {
+    padding-right: 5%;
+    text-align: right;
+}
+
+
+/*
+*
+* *
+* * * Guides Page Styling
+* *
+*
+*/
+
+main#guides div section article button em {
+    font-style: italic;
+    font-size: .875em;
+}
+
+main#guides div section article div p {
+    line-height: 1.25em;
+    font-weight: 500;
+    font-size: 1.125em;
+    text-indent: 5%;
+    padding: 1% 2.5% 0% 2.5%;
+    text-align: left;
+}
+
+#peter_hoelter:target,
+#christine_linder:target {
+    animation: target-animation 1s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes target-animation {
+    from {
+        background-color: #6695ef;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+
+/*
+*
+* *
+* * * Resources Page Styling
+* *
+*
+*/
+
+main#resources > p:last-child {
+    margin-top: 2%;
+}
+
+main#resources section article div button {
+    margin-bottom: 1.5%;
+    width: 90%;
+}
+
+main#resources section article div button:visited {
+    background-color: red;
+}
+
+main#resources p#redirect_msg {
+    font-size: .875em;
+    color: #6695ef;
+}
+
+main#resources p#redirect_msg span {
+    padding: 1%;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+
+/*
+*
+* *
+* * * Contact Page Styling
+* *
+*
+*/
+
+main#contact div.left_col {
+    text-align: right;
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 1% 1% 0 0;
+}
+
+main#contact div.right_col {
+    text-align: left;
+    font-size: 1.25em;
+    padding: 1% 1% 0 0;
+}
+
+main#contact div email a {
+    color: #6695ef;
+}
+
+main#contact div email a:hover {
+    color: #d9d9d9;
+    background-color: #6695ef;
+    border-radius: 5px;
+}
+
+main#contact div email a:active {
+    background-color: #ac926e;
+}
+
+
+/*
+*
+* *
+* * * Site Page Footer
+* *
+*
+*/
+
+footer {
+    margin-top: 2.5%;
+    background-image: linear-gradient(#fff, #ac926e);
+}
+
+footer nav.primary_nav ul li a:hover {
+    color: #fff;
+    background-color: #6cac6c;
+}
+
+footer nav li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+footer nav div.dropdown_content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(#6695ef, #fff);
+    min-width: 10em;
+    border-radius: 10px;
+}
+
+footer nav div.dropdown_content a:hover {
+    background-color: #6cac6c;
+}
+
+footer nav li.dropdown:hover div.dropdown_content {
+    display: block;
+    z-index: 100;
+    bottom: 100%;
+}
+
+footer div h2 {
+    text-align: right;
+    font-weight: 700;
+    font-size: 1.25em;
+    padding-right: 2%;
+}
+
+footer section p {
+    margin-right: 5%;
+    padding: 0 2%;
+    text-align: left;
+    font-size: .875em
+}
+
+footer section {
+    padding: 1% 0;
+}
+
+footer section#company_info {
+    font-size: .875em;
+}
